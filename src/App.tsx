@@ -1,5 +1,6 @@
 import Navbar from "@/scenes/navbar";
 import { useState } from "react";
+import { SelectedPage } from "./shared/types";
 
 enum selectedPage {
   Home = "home",
