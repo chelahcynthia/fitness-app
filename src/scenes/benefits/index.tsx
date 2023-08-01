@@ -2,6 +2,7 @@ import ActionButton from "@/shared/ActionButton";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from "@heroicons/react/24/solid";
+import HText from "@/shared/HText";
 
 
 type Props = {
@@ -17,9 +18,24 @@ const Benefits = ({ setselectedPage} : Props) => {
       onViewportEnter={() => setselectedPage(SelectedPage.Benefits)}
       >
      {/* HEADER SECTION */}
-     <div>
-      <h1 className="basis-3/5 font-montserrat text-3xl font-bold"></h1>
-     </div>
+     <motion.div
+     className="md:my-5 md:w-3/5"
+     initial="hidden"
+     whileInView={{ once:true, amount: 0.5}}
+     viewport={{ duration: 0.5 }}
+     transition={{ duration: 0.5 }}
+     variants={{
+      hidden: { opacity: 0, x: -50},
+      visible: { opacity: 1, x: 0 },
+
+     }}
+     >
+      <HText>MORE THAN JUST GYM.</HText>
+      <p className="my-5 text-sm">
+        We provide world class fitness equipment, trainers and classes to get you to your ultimate fitness goals with ease.
+        We provide true care into each and every member 
+      </p>
+     </motion.div>
 
 
 
