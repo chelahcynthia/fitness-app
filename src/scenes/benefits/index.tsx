@@ -1,9 +1,17 @@
-import React from 'react'
+import ActionButton from "@/shared/ActionButton";
+import { SelectedPage } from "@/shared/types";
+import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from "@heroicons/react/24/solid";
 
-type Props = {}
 
-const index = (props: Props) => {
+type Props = {
+  setSelectedPage: (value: SelectedPage) => void;
+};
+
+const Benefits = ({ setselectedPage} : Props) => {
   return (
-    <div>index</div>
+    <section>
+
+    </section>
   )
-}
+};
+export default Benefits;
