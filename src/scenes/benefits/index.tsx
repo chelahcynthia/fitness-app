@@ -9,7 +9,11 @@ type Props = {
 
 const Benefits = ({ setselectedPage} : Props) => {
   return (
-    <section>
+    <section
+    id="benefits"
+    className="mx-auto min-h-full"
+    >
+      
 
     </section>
   )
