@@ -46,7 +46,9 @@ type Props = {
 };
 
 const OurClasses = (props: Props) => {
-  return <div>index</div>;
+  <section id="ourclasses" className="w-full bg-primary-100 py-40">
+
+  </section>
 };
 
 export default OurClasses;
