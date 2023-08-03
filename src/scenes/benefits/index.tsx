@@ -15,19 +15,19 @@ const benefits: Array<BenefitType> = [
     icon: <HomeModernIcon className="h-6 w-6" />,
     title: "State of the Art Facilities",
     description:
-      "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     icon: <UserGroupIcon className="h-6 w-6" />,
     title: "100's of Diverse Classes",
     description:
-      "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..",
   },
   {
     icon: <AcademicCapIcon className="h-6 w-6" />,
     title: "Expert and Pro Trainers",
     description:
-      "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..",
   },
 ];
 
@@ -79,11 +79,21 @@ const Benefits = ({ setSelectedPage }: Props) => {
             <Benefit key={benefit.title} {...benefit} />
           ))}
         </motion.div>
+        
+        {/* GRAPHICS AND DESCRIPTION SECTION */}
+        <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex-end">
+          {/* GRAPHIC */}
+          <img 
+          className="mx-auto"
+          alt="benefits-page-graphic"
+          src={BenefitsPageGraphic}
+          />
+        </div>
+          
 
         </motion.div>
 
 
-        {/* </motion.div> */}
     </section>
   );
 };
