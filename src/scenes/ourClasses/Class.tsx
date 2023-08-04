@@ -1,6 +1,10 @@
 import React from 'react'
 
-type Props = {}
+type Props = {
+    name: string;
+    decsription: string;
+    image: string;
+}
 
 const Class = (props: Props) => {
   return (
