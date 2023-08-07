@@ -92,16 +92,16 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 </p>
               )}
               <textarea
-              className={inputStyles}
-              placeholder="MESSAGE"
-              rows={4}
-              cols={50}
-              {...register("message", {
-                 required: true,
-                 maxLength:2000,
+                className={inputStyles}
+                placeholder="MESSAGE"
+                rows={4}
+                cols={50}
+                {...register("message", {
+                  required: true,
+                  maxLength: 2000,
                 })}
-                />
-                  {errors.message && (
+              />
+              {errors.message && (
                 <p className="mt-1 text-primary-500">
                   {errors.message.type === "required" &&
                     "This field is required."}
@@ -110,13 +110,33 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 </p>
               )}
 
-              <button 
-              type="submit"
-              className="vmt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white">
+              <button
+                type="submit"
+                className="vmt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
+              >
                 SUBMIT
               </button>
-
             </form>
+          </motion.div>
+
+          <motion.div
+            className="relative mt-16 basis-2/5 md:mt-0"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
+            <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
+              <img
+                src={CotactUsPageGraphic}
+                alt="Contact us page graphic"
+                className="w-full"
+              />
+            </div>
           </motion.div>
         </div>
       </motion.div>
