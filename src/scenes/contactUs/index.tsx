@@ -57,7 +57,30 @@ const ContactUs = ({ setSelectedPage }: Props) => {
         </motion.div>
 
         {/* FORM AND IMAGE SECTION */}
-        
+        <div className="mt-10 justify-between gap-8 md:flex">
+          <motion.div
+           className="mt-10 basis-3/5 md:mt-0"
+           initial="hidden"
+           whileInView="visible"
+           viewport={{ once: true, amount: 0.5 }}
+           transition={{ duration: 0.5 }}
+           variants={{
+             hidden: { opacity: 0, y: 50 },
+             visible: { opacity: 1, y: 0 },
+           }}
+          >
+            <form
+            target="_blank"
+            onSubmit={onSubmit}
+            action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6"
+            method="POST"
+            >
+
+            </form>
+
+          </motion.div>
+        </div>
+
       </motion.div>
     </section>
   );
