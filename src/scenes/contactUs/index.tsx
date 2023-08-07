@@ -110,6 +110,12 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 </p>
               )}
 
+              <button 
+              type="submit"
+              className="vmt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white">
+                SUBMIT
+              </button>
+
             </form>
           </motion.div>
         </div>
