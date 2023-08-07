@@ -84,15 +84,23 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                   pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                 })}
               />
-               {errors.email && (
+              {errors.email && (
                 <p className="mt-1 text-primary-500">
                   {errors.email.type === "required" &&
                     "This field is required."}
                   {errors.email.type === "pattern" && "Invalid email address."}
                 </p>
               )}
-              
-
+              <textarea
+              className={inputStyles}
+              placeholder="MESSAGE"
+              rows={4}
+              cols={50}
+              {...register("message", {
+                 required: true,
+                 maxLength:2000,
+                })}
+                />
             </form>
           </motion.div>
         </div>
