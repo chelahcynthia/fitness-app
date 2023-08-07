@@ -59,28 +59,35 @@ const ContactUs = ({ setSelectedPage }: Props) => {
         {/* FORM AND IMAGE SECTION */}
         <div className="mt-10 justify-between gap-8 md:flex">
           <motion.div
-           className="mt-10 basis-3/5 md:mt-0"
-           initial="hidden"
-           whileInView="visible"
-           viewport={{ once: true, amount: 0.5 }}
-           transition={{ duration: 0.5 }}
-           variants={{
-             hidden: { opacity: 0, y: 50 },
-             visible: { opacity: 1, y: 0 },
-           }}
+            className="mt-10 basis-3/5 md:mt-0"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
+            }}
           >
             <form
-            target="_blank"
-            onSubmit={onSubmit}
-            action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6"
-            method="POST"
+              target="_blank"
+              onSubmit={onSubmit}
+              action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6"
+              method="POST"
             >
-
+              <input 
+              className={inputStyles}
+              type="text"
+              placeholder="EMAIL"
+              {...register("email", {
+                 required: true
+                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                 })}
+                 />
+              
             </form>
-
           </motion.div>
         </div>
-
       </motion.div>
     </section>
   );
