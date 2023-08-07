@@ -2,8 +2,9 @@
 
 type Props = {}
 
-const index = (props: Props) => {
+const Footer = (props: Props) => {
   return (
     <div>index</div>
   )
 }
+export default Footer;
