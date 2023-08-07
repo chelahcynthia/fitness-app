@@ -75,16 +75,24 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6"
               method="POST"
             >
-              <input 
-              className={inputStyles}
-              type="text"
-              placeholder="EMAIL"
-              {...register("email", {
-                 required: true
-                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                 })}
-                 />
+              <input
+                className={inputStyles}
+                type="text"
+                placeholder="EMAIL"
+                {...register("email", {
+                  required: true,
+                  pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                })}
+              />
+               {errors.email && (
+                <p className="mt-1 text-primary-500">
+                  {errors.email.type === "required" &&
+                    "This field is required."}
+                  {errors.email.type === "pattern" && "Invalid email address."}
+                </p>
+              )}
               
+
             </form>
           </motion.div>
         </div>
