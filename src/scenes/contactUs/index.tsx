@@ -12,7 +12,16 @@ type Props = {
 const ContactUs = ({setSelectedPage}: Props) => {
   const inputStyles = `mb-5 w-full rounded-lg bg-primary-300
   px-5 py-3 placceholder-white`;
-  const { register, trigger, formState:{ errors} } = useForm();
+  const {
+     register, trigger, formState:{ errors}
+     } = useForm();
+
+     const onSubmit = async (e: any) => {
+      const isValid = await trigger();
+      if (!isValid) {
+        e.preventDefault();
+      }
+    };
 
 
 
