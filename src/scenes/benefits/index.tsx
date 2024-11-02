@@ -15,19 +15,19 @@ const benefits: Array<BenefitType> = [
     icon: <HomeModernIcon className="h-6 w-6" />,
     title: "State of the Art Facilities",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      " Modern, high-tech equipment and amenities for an unparalleled workout experience.",
   },
   {
     icon: <UserGroupIcon className="h-6 w-6" />,
     title: "100's of Diverse Classes",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..",
+      "A wide variety of engaging classes catering to all fitness levels and interests.",
   },
   {
     icon: <AcademicCapIcon className="h-6 w-6" />,
     title: "Expert and Pro Trainers",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..",
+      "Knowledgeable, experienced trainers dedicated to helping you achieve your fitness goals effectively.",
   },
 ];
 
@@ -130,23 +130,21 @@ const Benefits = ({ setSelectedPage }: Props) => {
               }}
             >
               <p className="my-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <p className="my-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+                Join the ranks of millions who have transformed their lives through our state-of-the-art 
+                fitness facilities. With cutting-edge equipment and a diverse range of classes, our gym 
+                has become the go-to destination for those seeking to elevate their health and wellness. 
+                Our expert trainers are committed to guiding you on your unique fitness journey, ensuring 
+                that you receive personalized attention and support every step of the way. 
+                </p>
+
+             <p className="my-5">
+                Experience the energy and motivation that comes from being part of a thriving fitness 
+                community. Connect with like-minded individuals, forge new friendships, and celebrate 
+                each other's successes as you work towards your goals. With a welcoming atmosphere and 
+                a team dedicated to your success, it's no wonder that millions of happy members have chosen 
+                our gym as their fitness home. Join us today and become a part of this inspiring movement towards 
+                a healthier, happier lifestyle.
+               </p>
             </motion.div>
 
             {/* BUTTON */}
