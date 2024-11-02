@@ -7,10 +7,12 @@ const Footer = () => {
         <div className="mt-16 basis-1/2 md:mt-0">
           <img alt="logo" src={Logo} />
           <p className="my-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Our gym is a state-of-the-art fitness facility dedicated 
+            to helping individuals achieve their health and wellness 
+            goals. With cutting-edge equipment, diverse classes, 
+            and expert trainers, we provide a supportive and motivating 
+            environment for all fitness levels. Join our thriving 
+            community and embark on your transformative journey today.          
           </p>
           <p>© Evogym All Rights Reserved.</p>
         </div>

@@ -46,13 +46,12 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
           </HText>
           <p className="my-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Don't wait another moment to embark on your transformative fitness journey
+            . By joining our gym today, you're taking the first step towards a healthier, 
+            stronger, and more confident version of yourself. With state-of-the-art facilities, 
+            diverse classes, and expert guidance, you'll have all the tools and support necessary 
+            to achieve your goals. Embrace this opportunity to prioritize your well-being and join 
+            our community of motivated individuals who are ready to welcome you with open arms.          
           </p>
         </motion.div>
 
